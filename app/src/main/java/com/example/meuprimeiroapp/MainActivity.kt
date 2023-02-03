@@ -12,19 +12,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnCalcular: Button = findViewById(R.id.btnCalcular)
-        val textoMsg: EditText = findViewById(R.id.edtMsg)
-        val txtMessage: TextView = findViewById(R.id.txtMsg)
+        val edtPeso: EditText = findViewById(R.id.editText_peso)
+        val edtAltura: EditText = findViewById(R.id.editTextaltura)
+        val tvResultado: TextView = findViewById(R.id.txtMsg)
 
         btnCalcular.setOnClickListener{
-            val message: String = textoMsg.text.toString()
-            txtMessage.text = message
 
-            println(message)
+            val altura: Float = edtAltura.text.toString().toFloat()
+            val alturaFinal: Float = altura * altura
+            val peso: Float = edtPeso.text.toString().toFloat()
+            val result = peso / alturaFinal
 
-           /* val altura: Float = 1.75f * 1.75f
-            val peso: Int = 83
-            val result = peso / altura*/
-            //println("Yasmim Ferreira " + result)
+            tvResultado.text = result.toString()
         }
     }
 }
