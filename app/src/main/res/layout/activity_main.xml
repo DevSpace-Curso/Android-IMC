@@ -8,19 +8,18 @@
     tools:context=".MainActivity">
     
     <EditText
-        android:id="@+id/editText_peso"
-        android:layout_marginTop="20sp"
+        android:id="@+id/edittext_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite seu peso"
         android:inputType="numberDecimal"
-        android:maxLength="6"/>
+        android:maxLength="6" />
 
     <EditText
-        android:id="@+id/editTextaltura"
+        android:id="@+id/edittext_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextaltura"
+        android:layout_below="@+id/edittext_peso"
         android:layout_marginTop="20sp"
         android:hint="Digite sua altura"
         android:inputType="numberDecimal"

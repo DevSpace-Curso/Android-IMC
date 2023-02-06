@@ -12,12 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnCalcular: Button = findViewById(R.id.btnCalcular)
-        val edtPeso: EditText = findViewById(R.id.editText_peso)
-        val edtAltura: EditText = findViewById(R.id.editTextaltura)
+        val edtPeso: EditText = findViewById(R.id.edittext_peso)
+        val edtAltura: EditText = findViewById(R.id.edittext_altura)
         val tvResultado: TextView = findViewById(R.id.txtMsg)
 
         btnCalcular.setOnClickListener{
-
             val altura: Float = edtAltura.text.toString().toFloat()
             val alturaFinal: Float = altura * altura
             val peso: Float = edtPeso.text.toString().toFloat()
@@ -25,5 +24,6 @@ class MainActivity : AppCompatActivity() {
 
             tvResultado.text = result.toString()
         }
+
     }
 }
