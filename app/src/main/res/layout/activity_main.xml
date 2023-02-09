@@ -25,14 +25,7 @@
         android:inputType="numberDecimal"
         android:maxLength="6" />
 
-    <TextView
-        android:id="@+id/txtMsg"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:text="Bem-vindo(a)!" />
+
 
     <Button
         android:id="@+id/btnCalcular"
