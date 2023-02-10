@@ -4,37 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:background="@color/black"
     tools:context=".MainActivity">
-    
+
+
     <EditText
         android:id="@+id/edittext_peso"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:hint="Digite seu peso"
         android:inputType="numberDecimal"
-        android:maxLength="6" />
+        android:maxLength="6"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/edittext_altura"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edittext_peso"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:hint="Digite sua altura"
         android:inputType="numberDecimal"
-        android:maxLength="6" />
-
-
+        android:maxLength="6"
+        android:textColorHint="@color/purple_500"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/btnCalcular"
-        android:cursorVisible="true"
-        android:text="Calcular"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginStart="20dp"
+        android:cursorVisible="true"
+        android:text="Calcular" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Informe seus dados"
+        android:layout_marginStart="100dp"
+        android:textSize="20dp"
+        android:layout_marginTop="490dp"
+        android:textColorHint="@color/purple_500"
+        />
+
 
 </RelativeLayout>
 

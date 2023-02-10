@@ -6,6 +6,15 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
+
+    <TextView
+        android:text="Seu IMC é:"
+        android:textStyle="bold"
+        android:layout_marginTop="120sp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     
     <TextView
         android:id="@+id/textview_result"
@@ -13,14 +22,16 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textAlignment="center"
-       tools:text="Página 2"
+        tools:text="Página 2"
         android:textSize="38sp"/>
 
     <TextView
         android:id="@+id/textview_classificacao"
         tools:text="Classificação: Normal"
         android:textSize="22sp"
-        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
