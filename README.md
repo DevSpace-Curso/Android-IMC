@@ -16,7 +16,8 @@ referente ao curso DevSpace.
 
 🚀 Projeto 
 <br>
-<img src="https://user-images.githubusercontent.com/97356148/217006141-e4678be4-3a76-49d6-97b1-5f669aec17db.png" width="740px">    
+<img src="https://user-images.githubusercontent.com/97356148/218158660-d9bd9a12-e5be-4699-b42e-dd930e875735.png" width="740px">  <img src="https://user-images.githubusercontent.com/97356148/218158976-b8f05a28-b606-4e5e-b36e-8e35926235e6.png" width="240px">   
+
 <br>
 
 
