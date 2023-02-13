@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,19 +19,29 @@ class MainActivity : AppCompatActivity() {
         /*val tvResultado: TextView = findViewById(R.id.txtMsg)*/
 
         btnCalcular.setOnClickListener{
-           val altura: Float = edtAltura.text.toString().toFloat()
-            val alturaFinal: Float = altura * altura
-            val peso: Float = edtPeso.text.toString().toFloat()
-            val result: Float = peso / alturaFinal
 
-           /* tvResultado.text = result.toString()*/
+            val alturaStr = edtAltura.text.toString()
+            val pesoStr = edtPeso.text.toString()
 
-            val intent = Intent(this, ResultActivity::class.java)
-                .apply{
-                    putExtra("EXTRA_RESULT", result)
-                }
+            if(alturaStr.isNotEmpty() && pesoStr.isNotEmpty()) {
 
-            startActivity(intent)
+
+                val altura: Float = edtAltura.text.toString().toFloat()
+                val peso: Float = pesoStr.toFloat()
+
+
+                val alturaFinal: Float = altura * altura
+                val result: Float = peso / alturaFinal
+
+                val intent = Intent(this, ResultActivity::class.java)
+                    .apply {
+                        putExtra("EXTRA_RESULT", result)
+                    }
+
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Preencher todos os campos", Toast.LENGTH_LONG).show()
+            }
         }
 
     }
