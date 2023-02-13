@@ -6,8 +6,8 @@
 **🪐 Desafio 10D Challenge** <br>
 
 Introdução a Linguagem Kotlin para desenvolvimento do App Mobile Android, 
-primeiros passos focado em Android, parte do Front-end em andamento,
-referente ao curso DevSpace. 
+projeto focado em colocar boas práticas, interação com usuário, calcula o IMC, dados só calculados quando o preenchimento está completo, 
+mostra em qual classificação seu IMC está  ****"ABAIXO DO PESO", "NORMAL",  "SOBREPESO",  "OBESIDADE", "OBESIDADE GRAVE III"****
 
 
 <br>
